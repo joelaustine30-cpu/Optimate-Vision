@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Optimate Vision</title>
+  
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f9fa;
+            color: #222;
+        }
+
+        header {
+            background: #075b70;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin-top: 10px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #075b70;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: white;
+        }
+
+        .hero h2 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 20px 8px 0;
+            padding: 13px 25px;
+            background: #075b70;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #043d4c;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #075b70;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .screening {
+            background: #e9f5f7;
+        }
+
+        .form {
+            max-width: 600px;
+            margin: 25px auto;
+            text-align: left;
+        }
+
+        .form input,
+        .form select,
+        .form textarea {
+            width: 100%;
+            padding: 13px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form button {
+            border: none;
+            cursor: pointer;
+            padding: 13px 25px;
+            background: #075b70;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #123;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ClearView Eye Care</h1>
+        <p>Helping you see clearly and choose the right eyewear.</p>
+    </header>
+
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#screening">Eye Screening</a>
+        <a href="#order">Order Glasses</a>
+    </nav>
+
+
+    <section id="home" class="hero">
+
+        <h2>Your Vision Matters</h2>
+
+        <p>
+            Request an eye screening, get information about
+            suitable eyewear, and find affordable glasses
+            that fit your needs.
+        </p>
+
+        <a href="#screening" class="button">
+            Request Eye Screening
+        </a>
+
+        <a href="#order" class="button">
+            Order Glasses
+        </a>
+
+    </section>
+
+
+    <section id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <h3>👁️ Eye Screening</h3>
+                <p>
+                    Request an appointment for an eye screening
+                    with a qualified eye-care professional.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>👓 Eyewear</h3>
+                <p>
+                    Explore suitable eyewear options at prices
+                    that fit your budget.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🛒 Online Ordering</h3>
+                <p>
+                    If you prefer, you can continue to an
+                    external website to order your glasses online.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="screening" class="screening">
+
+        <h2>Request an Eye Screening</h2>
+
+        <p>
+            Fill in your details and we'll get back to you
+            about your screening request.
+        </p>
+
+        <form class="form">
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number" required>
+
+            <label>Preferred Date</label>
+            <input type="date">
+
+            <label>Message</label>
+            <textarea rows="5"
+                placeholder="Tell us anything you'd like us to know"></textarea>
+
+            <button type="submit">
+                Send Screening Request
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <section id="order">
+
+        <h2>Order Your Glasses Online</h2>
+
+        <p>
+            Want to order your glasses online?
+            Use the button below to visit our online ordering website.
+        </p>
+
+        <!-- Replace the URL below with the actual ordering website -->
+        <a
+            href="https://example.com"
+            target="_blank"
+            class="button">
+            Visit Online Store
+        </a>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 ClearView Eye Care</p>
+
+        <p>
+            For general information only. Eye screening and
+            treatment should be provided by qualified professionals.
+        </p>
+
+    </footer>
+
+</body>
+</html>

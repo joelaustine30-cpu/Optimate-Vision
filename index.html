@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Optimate Vision </title>
+
+    <meta name="description"
+          content="Free eye screening, eye examination and consultation, with affordable glasses available for purchase.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f9fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #075b70;
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        header p {
+            margin-top: 5px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #075b70;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 12px;
+        }
+
+        .hero {
+            background: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            color: #075b70;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .button {
+            display: inline-block;
+            background: #075b70;
+            color: white;
+            text-decoration: none;
+            padding: 13px 24px;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #043d4c;
+        }
+
+        section {
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #075b70;
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .services {
+            max-width: 1100px;
+            margin: 30px auto 0;
+
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(230px, 1fr));
+
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+
+            box-shadow:
+                0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #075b70;
+            margin-bottom: 12px;
+        }
+
+        .free {
+            color: #16823b;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        .glasses {
+            background: #e9f5f7;
+        }
+
+        .price {
+            color: #075b70;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .online {
+            background: white;
+        }
+
+        .contact {
+            background: #075b70;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        footer {
+            background: #123;
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 27px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+          .logo img{
+            width:320px;
+            height:auto;
+            display:block;
+            margin:0 auto 10px;
+            
+          }
+/* REALISTIC GLASSES HOME/ SECTION *
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 30px;
+    background: white;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    color: #075b70;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.secondary-button {
+    background: white !important;
+    color: #075b70 !important;
+    border: 2px solid #075b70 !important;
+}
+
+.secondary-button:hover {
+    background: #075b70 !important;
+    color: white !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+}
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+<div class="logo">
+  <img src="Logo.svg" alt="Optimate Vision Logo">
+  
+</div>
+        <h1>Optimate Vision</h1>
+
+        <p>
+            Free eye-care services and affordable eyewear
+        </p>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#services">Services</a>
+
+        <a href="#glasses">Glasses</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <!-- HOME -->
+
+    <section id="home" class="hero">
+
+        <h2>
+            Take Care of Your Vision
+        </h2>
+
+        <p>
+            Get access to free eye screening, eye examination
+            and consultation, then choose affordable glasses
+            that suit your needs.
+        </p>
+<div class="hero-buttons">
+
+  <a href="#services" class="button">
+    Explore Our Services
+  </a>
+
+  <a href="store.html" class="button secondary-button">
+  Shop Glasses
+  </a>
+</div>
+
+    </div>
+      <div class="hero.image">
+        <img src="glasses.jpg"alt="My home page">
+        
+      </div>
+
+    </section>
+
+
+    <!-- FREE SERVICES -->
+
+    <section id="services">
+
+        <h2>Our Free Services</h2>
+
+        <p>
+            These services are offered free of charge.
+        </p>
+
+        <div class="services">
+
+
+            <div class="card">
+
+                <h3>👁️ Eye Screening</h3>
+
+                <p>
+                    Have your vision screened to identify
+                    possible vision concerns.
+                </p>
+
+                <div class="free">
+                    FREE
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🔍 Eye Examination</h3>
+
+                <p>
+                    Receive an eye examination from a
+                    qualified eye-care professional.
+                </p>
+
+                <div class="free">
+                    FREE
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>💬 Eye Consultation</h3>
+
+                <p>
+                    Get guidance about your vision and
+                    suitable eyewear options.
+                </p>
+
+                <div class="free">
+                    FREE
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- GLASSES -->
+
+    <section id="glasses" class="glasses">
+
+        <h2>Our Glasses</h2>
+
+        <p>
+            Choose from a range of affordable eyewear.
+        </p>
+
+        <div class="services">
+
+
+            <div class="card">
+
+                <h3>Distance glasses</h3>
+
+                <p>
+                    Different glasses for different eyesight 
+                    distance
+                </p>
+
+                <div class="price">
+                    KSh from 1000
+                </div>
+
+                <a href="#contact" class="button">
+                    Get These Glasses
+                </a>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Reading Glasses</h3>
+
+                <p>
+                    Comfortable reading eyewear available
+                    in different strengths.
+                </p>
+
+                <div class="price">
+                    KSh from 500
+                </div>
+
+                <a href="#contact" class="button">
+                    Get These Glasses
+                </a>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Byphocal glasses</h3>
+
+                <p>
+                    Eyewear prepared according to your
+                    prescription.
+                </p>
+
+                <div class="price">
+                    KSh 2500
+                </div>
+
+                <a href="#contact" class="button">
+                    Get These Glasses
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ONLINE ORDERING -->
+
+    <section id="order">
+
+        <h2>Order Your Glasses Online</h2>
+
+        <p>
+            Prefer to shop online? Visit our online store
+            to view available glasses and place your order at optimate vision.
+        </p>
+
+        <div class="services">
+          <div class="card">
+            <h3>Reading Glasses</h3>
+          <p>
+            good and comfortable reading glasses with different frames
+          </p>
+          <div class="price">
+            from ksh 500
+          </div>
+
+            <a
+href="https://wa.me/254799858947?text=Hello%20Optimate%20Vision,%20I%20would%20like%20to%20order%20Reading%20glasses." 
+ target="_blank"             
+class="button">
+              order on WhatsApp
+              
+</a>
+          </div>
+
+          <div class="card"
+            <h3>Byphocal Glasses</h3>
+            <p>
+              good contact lenses for your eyes
+            </p>
+            <div class="price">
+              from ksh 1000
+            </div>
+ <a
+   href="https:wa.me/254799858947?text=Hello%20Optimate%20Vision,%20I%20would%20like%20to%20order%20Byphocal%20Glasses."
+   target="_blank"
+   class="button">
+   order on WhatsApp
+   </a>
+          </div>
+          <div class="card">
+            <h3>Distance glasses</h3>
+            <p>different glasses according to your eyesight found here on Optimimate vision
+            </p>
+            <div class="price">
+              from ksh 2500
+          </div>
+   <a
+     href="https://wa.me/254799858947?text=Hello%20Optimate%20Vision,%20I%20would%20like%20to%20order%20Distance%20glasses."
+     target="_blank"
+     class="button">
+     order on WhatsApp
+     
+     </a>
+          </div>
+
+        </div>
+      <div class="card">
+        <h3>Progressive Glasses</h3>
+      <p>
+        description
+      </p>
+        <div class="price">
+          from ksh 5000
+      </div>
+        <a
+     href="https://wa.me/254799858947?text=Hello%20Optimate%20Vision%20I%20would%20like%20to%20order%20Progressive Glasses" 
+    target="_blank" 
+      class="button"    
+          Order on WhatsApp
+          </a>
+      </div>
+    </section>
+        <a href="store.html"
+           class="button">
+          🛒 shop glasses
+        </a>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Have a question or want to enquire about glasses?
+        </p>
+
+        <a href="tel:+254799858947"
+           class="button">
+            📞 Call Us
+        </a>
+
+        <br>
+
+        <a href="https://wa.me/254799858947"
+           target="_blank"
+           class="button">
+            💬 WhatsApp Us
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Optimate Vision
+        </p>
+
+        <p>
+            Eye-care information should not replace
+            professional medical advice.
+        </p>
+
+    </footer>
+
+</body>
+</html>
